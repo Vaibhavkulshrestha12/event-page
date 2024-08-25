@@ -6,18 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Registration Form</title>
+    <title>Alephium Forge</title>
 
+   
+  
     <link rel="icon" href="./src/assets/Pentaomnia.png">
+
+    
     <link rel="stylesheet" href="./src/css/styles.css">
     <link rel="stylesheet" href="./src/tailwind-css/build.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css">
+
+    <script src="./src/js/app.js"></script>
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script src="https://kit.fontawesome.com/815143cb5d.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-image:none;
+        }
+    </style>
+
 </head>
 
-<body class="max-w-[1200px] bg-primary-blueDark mx-auto flex justify-center items-center min-h-screen">
+<body id="form-page" class="max-w-[1200px] bg-primary-blueDark mx-auto">
+
+
+    <nav class="z-[9999] fixed w-full max-w-[1200px] h-auto md:p-2 p-4 px-10 flex flex-row justify-between md:justify-evenly items-center bg-primary-blueDark md:bg-primary-blueDark10 md:backdrop-blur-2xl md:rounded-full md:mt-5"
+        id="mobile-nav">
+        <div class="header-left w-[40px]">
+            <img src="./src/assets/Pentaomnia.png" alt="" class="w-full">
+        </div>
+
+        <button id="mobile-menu-btn block md:hidden"><i onclick="Menu(this)"
+                class='bx bx-menu text-primary-heroWhite text-3xl text-left md:hidden md:text-[0px]'></i></button>
+
+        <ul id="navbar-items" class="hidden flex-col items-center justify-center gap-6 p-6 absolute bg-primary-blue z-[10] left-0 top-[83px] w-full
+                        md:flex md:flex-row md:relative md:top-auto md:left-auto md:bg-transparent md:w-auto">
+            <li>
+                <a href="#home"
+                    class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out">
+                    Event registration</a>
+            </li>
+            <li>
+                <a href="#partners"
+                    class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out">Partners</a>
+            </li>
+            <li>
+                <a href="#footer"
+                    class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out">contact Us</a>
+            </li>
+            
+            
+    </nav>
+
+
+    <!--  HERO -->
+    <section id="home" class="section flex flex-col justify-center items-center gap-6">
+       
+
+
+    </section>
+
 
     <!-- REGISTRATION FORM -->
-    <section id="registration" class="section flex flex-col items-center justify-center gap-6">
-        <div class="flex flex-col gap-8 justify-start items-center bg-primary-blue rounded-3xl max-w-[800px] p-6 w-full">
+    <section id="registration" class="section flex flex-col items-center justify-center gap-6 flex-grow">
+        <div class="flex flex-col gap-8 justify-start items-center bg-primary-blue rounded-3xl max-w-[500px] p-6 w-full">
             <h1 class="text-3xl font-bold text-center text-white mb-4">Event Registration</h1>
 
             <form action="submit_registration.php" method="POST" class="flex flex-col gap-4 w-full">
@@ -47,22 +101,113 @@
                 </div>
 
                 <button type="submit" class="primary-button mt-6 w-full" style="
-                background-color: #ff6f61;
-                color: white;
-                padding: 10px 20px;
-                border-radius: 50px;
-                border: none;
-                cursor: pointer;
-                font-size: 16px;
-                transition: background-color 0.3s ease;
-            " onmouseover="this.style.backgroundColor='#ff4a3e'" onmouseout="this.style.backgroundColor='#ff6f61'">
-                Register
-            </button>
-            
+                    background-color: #ff6f61;
+                    color: white;
+                    padding: 10px 20px;
+                    border-radius: 50px;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 16px;
+                    transition: background-color 0.3s ease;
+                " onmouseover="this.style.backgroundColor='#ff4a3e'" onmouseout="this.style.backgroundColor='#ff6f61'">
+                    Register
+                </button>
             </form>
         </div>
     </section>
 
+    
+
+    </section>
+    
+   <section id="partners" class="section clients">
+    <div class="title flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 mb-[35px] px-6">
+        <h1 class="section-title mb-0">Our Partner</h1>
+        <a href="#footer" class="primary-button">Contact Us</a>
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-8 items-start">
+        <!-- Partner Image and Website Box -->
+        <div class="clients-card-container grid grid-flow-row md:grid-flow-col lg:grid-flow-row gap-4 md:gap-8 place-content-center place-items-center w-full lg:w-1/2">
+            <div class="3-grid grid grid-flow-row lg:grid-cols-1 gap-4 place-content-start place-items-center w-full">
+                <div class="clients-card flex flex-col gap-4 p-6 justify-center items-center mx-auto bg-primary-blue rounded-[3rem] max-w-[300px] w-full h-auto">
+                    <div class="clients-img-container w-auto">
+                        <img src="./src/css/Alphie.png" alt="" class="max-w-full max-h-full h-full w-full">
+                    </div>
+
+                    <a href="https://alephium.org" class="guest-content p-2 flex flex-row gap-3 items-center justify-center cursor-pointer" target="_blank" rel="noopener noreferrer">
+                        <h2 class="clients-title text-base text-primary-sectionTitleColor hover:text-white text-center duration-150 ease-in">https://alephium.org</h2>
+                        <img src="./src/assets/open_icon.png" alt="" class="w-[12px] h-[12px]">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Code of Conduct Section -->
+        <div class="code-of-conduct-section flex flex-col gap-8 w-full lg:w-1/2">
+            <div class="code-of-conduct-card flex gap-8 justify-start items-center bg-primary-blue rounded-3xl p-6">
+                <div class="code-of-conduct-content p-6 bg-transparent text-primary-textColor">
+                    <h2 class="text-xl font-extrabold text-primary-sectionTitleColor mb-3 tracking-wider">Code of Conduct</h2>
+                    <p class="text-md text-primary-textColor mb-3">Our Code of Conduct outlines the expected behavior for all participants at the event. We aim to create a respectful and inclusive environment for everyone. Please follow these guidelines:</p>
+                    <ul class="list-disc list-inside text-md text-primary-textColor">
+                        <li>Respect others' opinions and perspectives.</li>
+                        <li>Behave professionally and courteously.</li>
+                        <li>Refrain from any form of harassment or discrimination.</li>
+                        <li>Follow all event-specific rules and guidelines.</li>
+                        <br>
+                        <li>*Bring your own device for the event</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    <!-- FOOTER  -->
+   <footer id="footer" class="section lg:w-full max-w-[1200px] bg-primary-blue text-white py-6">
+    <div class="flex flex-col items-center justify-center gap-6 lg:flex-row lg:justify-between lg:items-start lg:gap-24 px-6">
+
+        <!-- Contact Information -->
+        <div class="flex flex-col items-center lg:items-start">
+            <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+            <p class="text-sm mb-2">Email: <a href="mailto:Pentaomnia@gmail.com" class="hover:underline">Pentaomnia@gmail.com</a></p>
+            <p class="text-sm mb-2">Phone: +91 9006964216</p>
+            <p class="text-sm">Venue: 34 - 213, Lovely Professional University, Punjab, India</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="flex flex-col items-center lg:items-start">
+            <h2 class="text-2xl font-bold mb-4">Quick Links</h2>
+            <ul class="space-y-2">
+                <li><a href="#home" class="hover:underline">Home</a></li>
+                <li><a href="#guests" class="hover:underline">Guests</a></li>
+                <li><a href="#partners" class="hover:underline">Partners</a></li>
+            </ul>
+        </div>
+
+        <!-- Signup -->
+        <div class="flex flex-col items-center lg:items-start">
+            <h2 class="text-2xl font-bold mb-4">Pentaomnia</h2>
+            <p class="text-sm mb-2">Join our organisation</p>
+            <div class="flex flex-col gap-2">
+                <input class="py-2 px-4 bg-white text-sm rounded-full w-auto" type="email" name="email" id="news-letter-input" placeholder="abc@gmail.com">
+                <button class="primary-button">Join</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright and Credit -->
+    <div class="absolute bottom-2 right-4 text-right">
+        <p>&copy; 2024 Pentaomnia. All rights reserved.</p>
+        <p class="mt-1">Created by <a href="https://www.linkedin.com/in/vaibhav-kulshrestha-053924283" target="_blank" class="hover:underline">Vaibhav Kulshrestha</a></p>
+
+    </div>
+</footer>
+
+
+
 </body>
 
 </html>
+

@@ -85,82 +85,78 @@
     
 
     <!--  GUESTS-->
-    <section id="guests" class="section guests max-w-[1200px]" id="image-carousel">
-        <h1 class="section-title">Our Guests</h1>
-    
-        <ul class="guests-list flex flex-row gap-8 items-center justify-center">
-    
-            <li class="guests-card flex gap-8 justify-start items-center bg-primary-blue rounded-3xl max-w-[800px] p-6">
-                <div class="guest-photo rounded-full overflow-hidden flex-shrink-0">
-                    <img src="./src/assets/Sai poorna.jpeg" alt="Sai poorna" class="w-40 h-40 object-cover">
-                </div>
-    
-                <div class="guest-content p-6 bg-transparent text-primary-textColor">
-                    <h2 class="guests-title text-xl font-extrabold text-primary-sectionTitleColor mb-3 tracking-wider">Sai Poorna</h2>
-                    <p class="text-md text-primary-textColor mb-3 font-Oswald uppercase">Startup Mentor</p>
-                    <p class="text-md">Mr. Sai Poorna is a seasoned
-                        investor, mentor, and expert in the rapidly evolving world of Web3. Since 2015, he has been at the
-                        forefront of the Web3 revolution, actively contributing to the growth and development of new-age
-                        startups. His deep understanding of blockchain technology and its potential has made him a
-                        sought-after speaker at top global conferences and events.
-                        </p>
-                </div>
-            </li>
-    
-        </ul>
-    </section>
+   <!-- GUESTS-->
+<section id="guests" class="section guests max-w-[1200px]" id="image-carousel">
+    <h1 class="section-title">Our Guests</h1>
+
+    <ul class="guests-list flex flex-col lg:flex-row gap-8 items-center justify-center">
+        <li class="guests-card flex flex-col lg:flex-row gap-8 justify-start items-center bg-primary-blue rounded-3xl max-w-[800px] p-6">
+            <div class="guest-photo rounded-full overflow-hidden flex-shrink-0 mb-4 lg:mb-0">
+                <img src="./src/assets/Sai poorna.jpeg" alt="Sai Poorna" class="w-40 h-40 object-cover">
+            </div>
+
+            <div class="guest-content p-6 bg-transparent text-primary-textColor">
+                <h2 class="guests-title text-xl font-extrabold text-primary-sectionTitleColor mb-3 tracking-wider">Sai Poorna</h2>
+                <p class="text-md text-primary-textColor mb-3 font-Oswald uppercase">Startup Mentor</p>
+                <p class="text-md">
+                    Mr. Sai Poorna is a seasoned investor, mentor, and expert in the rapidly evolving world of Web3. Since 2015, he has been at the forefront of the Web3 revolution, actively contributing to the growth and development of new-age startups. His deep understanding of blockchain technology and its potential has made him a sought-after speaker at top global conferences and events.
+                </p>
+            </div>
+        </li>
+    </ul>
+</section>
+
     
     
 
     <!--PARTNER -->
-    <section id="partners" class="section clients">
-        <div class="title flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 mb-[35px] px-6">
-            <h1 class="section-title mb-0">Our Partner</h1>
-            <a href="#footer" class="primary-button">Contact Us</a>
+   <section id="partners" class="section clients">
+    <div class="title flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 mb-[35px] px-6">
+        <h1 class="section-title mb-0">Our Partner</h1>
+        <a href="#footer" class="primary-button">Contact Us</a>
+    </div>
 
-        </div>
-
-        <div class="flex gap-8 items-start">
-            
-            <div class="clients-card-container grid grid-flow-row md:grid-flow-col lg:grid-flow-row gap-4 md:gap-8 place-content-center place-items-center w-1/2">
-                <div class="3-grid grid grid-flow-row lg:grid-cols-3 gap-4 place-content-start place-items-end w-full">
-                    <div class="clients-card flex flex-col gap-4 p-6 justify-center items-center mx-auto bg-primary-blue rounded-[3rem] max-w-[300px] w-[250px] h-[250px]">
-                        <div class="clients-img-container w-auto">
-                            <img src="./src/css/Alphie.png" alt="" class="max-w-full max-h-full h-full w-full">
-                        </div>
-
-                       <a href="https://alephium.org" class="guest-content p-2 flex flex-row gap-3 items-center justify-center cursor-pointer" target="_blank" rel="noopener noreferrer">
-    <h2 class="clients-title text-base text-primary-sectionTitleColor hover:text-white text-center duration-150 ease-in">https://alephium.org</h2>
-    <img src="./src/assets/open_icon.png" alt="" class="w-[12px] h-[12px]">
-</a>
-
+    <div class="flex flex-col lg:flex-row gap-8 items-start">
+        <!-- Partner Image and Website Box -->
+        <div class="clients-card-container grid grid-flow-row md:grid-flow-col lg:grid-flow-row gap-4 md:gap-8 place-content-center place-items-center w-full lg:w-1/2">
+            <div class="3-grid grid grid-flow-row lg:grid-cols-1 gap-4 place-content-start place-items-center w-full">
+                <div class="clients-card flex flex-col gap-4 p-6 justify-center items-center mx-auto bg-primary-blue rounded-[3rem] max-w-[300px] w-full h-auto">
+                    <div class="clients-img-container w-auto">
+                        <img src="./src/css/Alphie.png" alt="" class="max-w-full max-h-full h-full w-full">
                     </div>
-                </div>
-            </div>
 
-            <!-- Code of Conduct Section -->
-            <div class="code-of-conduct-section flex flex-col gap-8 w-1/2">
-                <div class="code-of-conduct-card flex gap-8 justify-start items-center bg-primary-blue rounded-3xl p-6">
-                    <div class="code-of-conduct-content p-6 bg-transparent text-primary-textColor">
-                        <h2 class="text-xl font-extrabold text-primary-sectionTitleColor mb-3 tracking-wider">Code of Conduct</h2>
-                        <p class="text-md text-primary-textColor mb-3">Our Code of Conduct outlines the expected behavior for all participants at the event. We aim to create a respectful and inclusive environment for everyone. Please follow these guidelines:</p>
-                        <ul class="list-disc list-inside text-md text-primary-textColor">
-                            <li>Respect others' opinions and perspectives.</li>
-                            <li>Behave professionally and courteously.</li>
-                            <li>Refrain from any form of harassment or discrimination.</li>
-                            <li>Follow all event-specific rules and guidelines.</li>
-                            <br>
-                            <li>*Bring your own device for the event</li>
-                        </ul>
-                    </div>
+                    <a href="https://alephium.org" class="guest-content p-2 flex flex-row gap-3 items-center justify-center cursor-pointer" target="_blank" rel="noopener noreferrer">
+                        <h2 class="clients-title text-base text-primary-sectionTitleColor hover:text-white text-center duration-150 ease-in">https://alephium.org</h2>
+                        <img src="./src/assets/open_icon.png" alt="" class="w-[12px] h-[12px]">
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- Code of Conduct Section -->
+        <div class="code-of-conduct-section flex flex-col gap-8 w-full lg:w-1/2">
+            <div class="code-of-conduct-card flex gap-8 justify-start items-center bg-primary-blue rounded-3xl p-6">
+                <div class="code-of-conduct-content p-6 bg-transparent text-primary-textColor">
+                    <h2 class="text-xl font-extrabold text-primary-sectionTitleColor mb-3 tracking-wider">Code of Conduct</h2>
+                    <p class="text-md text-primary-textColor mb-3">Our Code of Conduct outlines the expected behavior for all participants at the event. We aim to create a respectful and inclusive environment for everyone. Please follow these guidelines:</p>
+                    <ul class="list-disc list-inside text-md text-primary-textColor">
+                        <li>Respect others' opinions and perspectives.</li>
+                        <li>Behave professionally and courteously.</li>
+                        <li>Refrain from any form of harassment or discrimination.</li>
+                        <li>Follow all event-specific rules and guidelines.</li>
+                        <br>
+                        <li>*Bring your own device for the event</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     
     <!-- FOOTER  -->
-   <<footer id="footer" class="section lg:w-full max-w-[1200px] bg-primary-blue text-white py-6">
+   <footer id="footer" class="section lg:w-full max-w-[1200px] bg-primary-blue text-white py-6">
     <div class="flex flex-col items-center justify-center gap-6 lg:flex-row lg:justify-between lg:items-start lg:gap-24 px-6">
 
         <!-- Contact Information -->

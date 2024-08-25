@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap");
-
 :root {
   --primary-btn-gradient: linear-gradient(to right, #7F1CFC 0%, #FF1C60 100%);
   --primary-btn-gradient-hover: linear-gradient(to right, #FF1C60 0%, #7F1CFC 100%);
@@ -41,7 +40,6 @@ html {
   padding: 50px 10px;
   max-width: 1200px;
 }
-
 @media screen and (min-width: 768px) {
   .section {
     padding: 70px 60px;
@@ -57,7 +55,6 @@ html {
   margin-bottom: 35px;
   text-transform: uppercase;
 }
-
 @media screen and (min-width: 768px) {
   .section-title {
     font-size: 44px;
@@ -66,9 +63,8 @@ html {
 }
 
 header {
-  padding: 20px 10px; /* Adjusted for mobile */
+  padding: 20px 120px;
 }
-
 @media screen and (min-width: 768px) {
   header {
     padding: 40px 120px;
@@ -83,7 +79,6 @@ body {
   background-image: url("../css/Alphie.png");
   background-position: center 170px;
 }
-
 @media screen and (min-width: 768px) {
   body {
     background-size: 1000px;
@@ -117,7 +112,6 @@ body {
   color: #fff;
   text-decoration: none;
 }
-
 /* Mobile Styles */
 @media (max-width: 768px) {
   .section {
