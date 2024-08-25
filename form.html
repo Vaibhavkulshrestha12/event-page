@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Form</title>
+
+    <link rel="icon" href="./src/assets/Pentaomnia.png">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/tailwind-css/build.css">
+</head>
+
+<body class="max-w-[1200px] bg-primary-blueDark mx-auto flex justify-center items-center min-h-screen">
+
+    <!-- REGISTRATION FORM -->
+    <section id="registration" class="section flex flex-col items-center justify-center gap-6">
+        <div class="flex flex-col gap-8 justify-start items-center bg-primary-blue rounded-3xl max-w-[800px] p-6 w-full">
+            <h1 class="text-3xl font-bold text-center text-white mb-4">Event Registration</h1>
+
+            <form action="submit_registration.php" method="POST" class="flex flex-col gap-4 w-full">
+                <div>
+                    <label for="name" class="block text-sm font-semibold text-white mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-3 bg-primary-blueDark10 text-black placeholder-white rounded-full" required>
+                </div>
+
+                <div>
+                    <label for="reg-number" class="block text-sm font-semibold text-white mb-2">Registration Number</label>
+                    <input type="number" id="reg-number" name="registration_number" class="w-full p-3 bg-primary-blueDark10 text-black placeholder-white rounded-full" required>
+                </div>
+
+                <div>
+                    <label for="mobile" class="block text-sm font-semibold text-white mb-2">Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile" class="w-full p-3 bg-primary-blueDark10 text-black placeholder-white rounded-full" required>
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-semibold text-white mb-2">Email ID</label>
+                    <input type="email" id="email" name="email" class="w-full p-3 bg-primary-blueDark10 text-black placeholder-white rounded-full" required>
+                </div>
+
+                <div>
+                    <label for="grad-year" class="block text-sm font-semibold text-white mb-2">Year of Graduation</label>
+                    <input type="number" id="grad-year" name="graduation_year" class="w-full p-3 bg-primary-blueDark10 text-black placeholder-white rounded-full" required>
+                </div>
+
+                <button type="submit" class="primary-button mt-6 w-full" style="
+                background-color: #ff6f61;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 50px;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background-color 0.3s ease;
+            " onmouseover="this.style.backgroundColor='#ff4a3e'" onmouseout="this.style.backgroundColor='#ff6f61'">
+                Register
+            </button>
+            
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
