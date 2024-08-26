@@ -7,25 +7,31 @@
     <link rel="stylesheet" href="./src/css/styles.css">
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #1e3a8a; /* Tailwind primary blue dark color */
             margin: 0;
             font-family: Arial, sans-serif;
             color: white;
+            overflow: hidden; 
         }
 
         .poster-container {
-            position: relative;
-            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #10141c; 
         }
 
         .poster {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 0;
         }
 
         .popup {
@@ -38,6 +44,7 @@
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
             display: none;
+            color: white;
         }
 
         .popup h2 {
@@ -49,22 +56,21 @@
 <body>
 
 <div class="poster-container">
-    <img src="./src/assets/poster.png" alt="Event Poster" class="poster">
+    
     <div id="successPopup" class="popup">
         <h2>Registration Successful!</h2>
     </div>
 </div>
 
 <script>
-   
-    window.onload = function() {
-        document.getElementById('successPopup').style.display = 'block';
+  window.onload = function() {
+    document.getElementById('successPopup').style.display = 'block';
+    setTimeout(function() {
+      document.getElementById('successPopup').style.display = 'none'; 
 
-      
-        setTimeout(function() {
-            document.getElementById('successPopup').style.display = 'none';
-        }, 3000);
-    }
+      window.location.href = "index.html"; 
+    }, 3000);
+  }
 </script>
 
 </body>
