@@ -112,21 +112,7 @@ body {
   color: #fff;
   text-decoration: none;
 }
-/* Mobile Styles */
-@media (max-width: 768px) {
-  .section {
-    padding: 30px 10px;
-  }
 
-  .section-title {
-    font-size: 28px;
-  }
-
-  .primary-button {
-    font-size: 14px;
-    padding: 10px 15px;
-  }
-}
 
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -159,3 +145,20 @@ body {
     padding: 10px 15px;
   }
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .section {
+    padding: 30px 10px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .primary-button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
