@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Alephium Forge</title>
+    <title>Arm Wrestling Championship 3.0</title>
 
    
   
@@ -21,21 +21,15 @@
     <script src="./src/js/app.js"></script>
     <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <script src="https://kit.fontawesome.com/815143cb5d.js" crossorigin="anonymous"></script>
-    <style>
-        body{
-            background-image:none;
-        }
-    </style>
 
 </head>
 
-<body id="form-page" class="max-w-[1200px] bg-primary-blueDark mx-auto">
-
+<body class="max-w-[1200px] bg-primary-blueDark mx-auto">
 
     <nav class="z-[9999] fixed w-full max-w-[1200px] h-auto md:p-2 p-4 px-10 flex flex-row justify-between md:justify-evenly items-center bg-primary-blueDark md:bg-primary-blueDark10 md:backdrop-blur-2xl md:rounded-full md:mt-5"
         id="mobile-nav">
         <div class="header-left w-[40px]">
-           <a href ="index.html"><img src="./src/assets/Pentaomnia.png" alt="" class="w-full"></a> 
+            <img src="./src/assets/Pentaomnia.png" alt="" class="w-full">
         </div>
 
         <button id="mobile-menu-btn block md:hidden"><i onclick="Menu(this)"
@@ -45,106 +39,123 @@
                         md:flex md:flex-row md:relative md:top-auto md:left-auto md:bg-transparent md:w-auto">
             <li>
                 <a href="#home"
-                    class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out">
-                    Event registration</a>
+                    class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out">About
+                    Event</a>
+            </li>
+            
+            <li>
+                <a href="#guests"
+                    class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out">Guests</a>
             </li>
             <li>
                 <a href="#partners"
                     class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out">Partners</a>
             </li>
-            <li>
-                <a href="#footer"
-                    class="text-base text-primary-textColor font-Inter hover:text-white duration-150 ease-in-out">contact Us</a>
-            </li>
-            
-            
+           
+           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnOWXoa-onFPf9MLPegdsY1Zu5q7OsMivPIeKAUjJxzBoxYA/viewform?vc=0&c=0&w=1&flr=0" class="primary-button mobile block md:hidden">Register Now</a>
+        </ul>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnOWXoa-onFPf9MLPegdsY1Zu5q7OsMivPIeKAUjJxzBoxYA/viewform?vc=0&c=0&w=1&flr=0" class="primary-button hidden md:block">Register Now</a>
     </nav>
 
 
     <!--  HERO -->
     <section id="home" class="section flex flex-col justify-center items-center gap-6">
+
+        <img src="./src/assets/hero/glow.png" alt=""
+            class="hidden xl:block z-[-10] absolute left-[11%] top-[10px] w-[600px]">
+
+        <h1 class="text-4xl sm:text-5xl font-bold text-center text-primary-heroWhite pt-[4rem] md:hidden">EVENT 2024
+        </h1>
+        <img src="./src/assets/hero/event_2022.png" alt="" class="max-w-[990px] w-full mt-[10rem] hidden md:block"> 
        
+        <img src="./src/assets/" alt=""
+            class="hidden md:block absolute w-screen top-[770px] z-[-100]">
 
-
-    </section>
-
-
-    <!-- REGISTRATION FORM -->
-    <section id="registration" class="section flex flex-col items-center justify-center gap-6 flex-grow">
-        <div class="flex flex-col gap-8 justify-start items-center bg-primary-blue rounded-3xl max-w-[400px] p-6 w-full">
-            <h1 class="text-3xl font-bold text-center text-white mb-4">Event Registration</h1>
-
-            <form action="submit_registration.php" method="POST" class="flex flex-col gap-4 w-full">
-                <div>
-                    <label for="name" class="block text-sm font-semibold text-white mb-2">Name</label>
-                    <input type="text" id="name" name="name" class="w-full p-3 bg-primary-blueDark10 text-black placeholder-white rounded-full" required>
-                </div>
-
-                <div>
-                    <label for="reg-number" class="block text-sm font-semibold text-white mb-2">Registration Number</label>
-                    <input type="number" id="reg-number" name="registration_number" class="w-full p-3 bg-primary-blueDark10 text-black placeholder-white rounded-full" required>
-                </div>
-
-                <div>
-                    <label for="mobile" class="block text-sm font-semibold text-white mb-2">Mobile Number</label>
-                    <input type="tel" id="mobile" name="mobile" class="w-full p-3 bg-primary-blueDark10 text-black placeholder-white rounded-full" required>
-                </div>
-
-                <div>
-                    <label for="email" class="block text-sm font-semibold text-white mb-2">Email ID</label>
-                    <input type="email" id="email" name="email" class="w-full p-3 bg-primary-blueDark10 text-black placeholder-white rounded-full" required>
-                </div>
-
-                <div>
-                    <label for="course" class="block text-sm font-semibold text-white mb-2">Course</label>
-                    <input type="text" id="course" name="course" class="w-full p-3 bg-primary-blueDark10 text-black placeholder-white rounded-full" required>
-                </div>
-
-                <div>
-                    <label for="grad-year" class="block text-sm font-semibold text-white mb-2">Year of Graduation</label>
-                    <input type="number" id="grad-year" name="graduation_year" class="w-full p-3 bg-primary-blueDark10 text-black placeholder-white rounded-full" required>
-                </div>
-
-                <button type="submit" class="primary-button mt-6 w-full" style="
-                    background-color: #ff6f61;
-                    color: white;
-                    padding: 10px 20px;
-                    border-radius: 50px;
-                    border: none;
-                    cursor: pointer;
-                    font-size: 16px;
-                    transition: background-color 0.3s ease;
-                " onmouseover="this.style.backgroundColor='#ff4a3e'" onmouseout="this.style.backgroundColor='#ff6f61'">
-                    Submit
-                </button>
-            </form>
+        <div class="hero-text-image max-w-[460px] mt-[420px] md:mt-[130px]">
+            <img src="./src/assets/hero/" alt="">
         </div>
+
+
+         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnOWXoa-onFPf9MLPegdsY1Zu5q7OsMivPIeKAUjJxzBoxYA/viewform?vc=0&c=0&w=1&flr=0" id="register-button" class="primary-button mt-4">Register Now</a>
+
+
     </section>
+
 
     
 
-    </section>
     
-   <section id="partners" class="section clients">
+   <!-- GUESTS-->
+<section id="guests" class="section guests max-w-[1200px]" id="image-carousel">
+    <h1 class="section-title">Our Event</h1>
+
+    <ul class="guests-list flex flex-col lg:flex-row gap-8 items-center justify-center">
+        <li class="guests-card flex flex-col lg:flex-row gap-8 justify-start items-center bg-primary-blue rounded-3xl max-w-[800px] p-6">
+            <div class="guest-photo rounded-full overflow-hidden flex-shrink-0 mb-4 lg:mb-0">
+                <img src="./src/assets/logoarm.png" alt="Arm Wrestling Championship 3.0" class="w-40 h-40 object-cover">
+            </div>
+
+            <div class="guest-content p-6 bg-transparent text-primary-textColor">
+                <h2 class="guests-title text-xl font-extrabold text-primary-sectionTitleColor mb-3 tracking-wider">Arm Wrestling Championship 3.0</h2>
+                <p class="text-md text-primary-textColor mb-3 font-Oswald uppercase">📅 Date: 16th & 17th sept 
+                    <br>🕚 TIme: 5:00 pm - 8:00 pm<br>   
+                    🏟 Venue: Unimall Ground floor
+                    </p>
+                <p class="text-md">
+                    Get ready to flex your muscles and show your strength! Student organization PENTAOMNIA in assistance of ARM WRESTLING CLUB LPU is presenting the biggest ever Panja tournament - "Arm Wrestling Championship 3.0" in LPU🥇, exclusively for LPU students only. It's time to prove that you've got the courage to win it all! 
+                    This is the best opportunity to learn and experience the highest level of Arm Wrestling - in our campus itself by participating in it.
+                    
+                </p>
+            </div>
+        </li>
+    </ul>
+</section>
+
+    
+    
+
+    <!--PARTNER -->
+   
+<!-- Partners Section -->
+<section id="partners" class="section clients">
     <div class="title flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 mb-[35px] px-6">
         <h1 class="section-title mb-0">Our Partner</h1>
-        <a href="#footer" class="primary-button">Contact Us</a>
+        <a href="https://wa.me/919006964216" class="primary-button" target="_blank">Contact Us</a>
     </div>
 
     <div class="flex flex-col lg:flex-row gap-8 items-start">
-        <!-- Partner Image and Website Box -->
-        <div class="clients-card-container grid grid-flow-row md:grid-flow-col lg:grid-flow-row gap-4 md:gap-8 place-content-center place-items-center w-full lg:w-1/2">
-            <div class="3-grid grid grid-flow-row lg:grid-cols-1 gap-4 place-content-start place-items-center w-full">
-                <div class="clients-card flex flex-col gap-4 p-6 justify-center items-center mx-auto bg-primary-blue rounded-[3rem] max-w-[300px] w-full h-auto">
-                    <div class="clients-img-container w-auto">
-                        <img src="./src/css/Alphie.png" alt="" class="max-w-full max-h-full h-full w-full">
-                    </div>
-
-                    <a href="https://alephium.org" class="guest-content p-2 flex flex-row gap-3 items-center justify-center cursor-pointer" target="_blank" rel="noopener noreferrer">
-                        <h2 class="clients-title text-base text-primary-sectionTitleColor hover:text-white text-center duration-150 ease-in">https://alephium.org</h2>
-                        <img src="./src/assets/open_icon.png" alt="" class="w-[12px] h-[12px]">
-                    </a>
-                </div>
+        <!-- Partner Logos Grid -->
+        <div class="partners-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-content-center w-full lg:w-1/2">
+            <!-- Partner Logo Item -->
+            <div class="partner-item flex flex-col justify-center items-center bg-primary-blue rounded-[3rem] p-4">
+               
+                    <img src="./src/assets/partner/1-3eadaf35.png" alt="Alphie Logo 1" class="w-full h-auto">
+                </a>
+            </div>
+            <div class="partner-item flex flex-col justify-center items-center bg-primary-blue rounded-[3rem] p-4">
+               
+                    <img src="./src/assets/partner/1-f0d11c4a.png" alt="Alphie Logo 2" class="w-full h-auto">
+                </a>
+            </div>
+            <div class="partner-item flex flex-col justify-center items-center bg-primary-blue rounded-[3rem] p-4">
+                
+                    <img src="./src/assets/partner/2-3eadaf35.png" alt="Alphie Logo 3" class="w-full h-auto">
+                </a>
+            </div>
+            <div class="partner-item flex flex-col justify-center items-center bg-primary-blue rounded-[3rem] p-4">
+               
+                   <img src="./src/assets/partner/3-3eadaf35.png" alt="Alphie Logo 4" class="w-full h-auto">
+                </a>
+            </div>
+            <div class="partner-item flex flex-col justify-center items-center bg-primary-blue rounded-[3rem] p-4">
+                
+                    <img src="./src/assets/partner/4-3eadaf35.png" alt="Alphie Logo 5" class="w-full h-auto">
+                </a>
+            </div>
+            <div class="partner-item flex flex-col justify-center items-center bg-primary-blue rounded-[3rem] p-4">
+                
+                    <img src="./src/assets/partner/person1.jpg" alt="Alphie Logo 6" class="w-full h-auto">
+                </a>
             </div>
         </div>
 
@@ -152,21 +163,30 @@
         <div class="code-of-conduct-section flex flex-col gap-8 w-full lg:w-1/2">
             <div class="code-of-conduct-card flex gap-8 justify-start items-center bg-primary-blue rounded-3xl p-6">
                 <div class="code-of-conduct-content p-6 bg-transparent text-primary-textColor">
-                    <h2 class="text-xl font-extrabold text-primary-sectionTitleColor mb-3 tracking-wider">Code of Conduct</h2>
-                    <p class="text-md text-primary-textColor mb-3">Our Code of Conduct outlines the expected behavior for all participants at the event. We aim to create a respectful and inclusive environment for everyone. Please follow these guidelines:</p>
+                    <h2 class="text-xl font-extrabold text-primary-sectionTitleColor mb-3 tracking-wider">Perks of Event</h2>
+                    <p class="text-md text-primary-textColor mb-3">Perks:<br>
+                        🏆 Champion of Champions Trophy for the ultimate winner<br>
+                        🏅 Hard copy certificates and medals for all the winners<br>
+                        📜 E-certificates for all participants<br>
+                        
+                     <br>Don't miss the chance to meet our special chief guests from Pro Panja League at the time of grand finale. Our guests are:-
+                        </p>
                     <ul class="list-disc list-inside text-md text-primary-textColor">
-                        <li>Respect others' opinions and perspectives.</li>
-                        <li>Behave professionally and courteously.</li>
-                        <li>Refrain from any form of harassment or discrimination.</li>
-                        <li>Follow all event-specific rules and guidelines.</li>
+                        <li> 1. Sanjay Deswal (National Champion)</li>
+                        <li>2. Shiddhaant Kathuria (Asian Medallist)</li>
+                        <li>3. Aabhas Rana (World Champion)</li>
+                        <li>4. Amit Singh (National Champion)</li>
+                        <li>5. Shivam Rajput (National Champion)</li>
+                        <li> 6. Harman Mann (National Champion)</li>
                         <br>
-                        <li>*Bring your own device for the event</li>
+                        <li> All are Pro Panja League superstars and plays live on Sony Sports Network.🔥</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
     
     <!-- FOOTER  -->
@@ -201,6 +221,7 @@
             </div>
         </div>
     </div>
+  
 
     <!-- Copyright and Credit -->
     <div class="absolute bottom-2 right-4 text-right">
